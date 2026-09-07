@@ -249,7 +249,7 @@ footer{margin-top:80px;border-top:1px solid var(--rule);padding:22px 0 60px;
     <dl class="specstrip">
       <div><dt>Frame</dt><dd>640×360 · 20 fps</dd></div>
       <div><dt>Cameras</dt><dd>RGB + IR</dd></div>
-      <div><dt>Lidar</dt><dd>360° scan</dd></div>
+      <div><dt>Lidar</dt><dd>Simulated</dd></div>
       <div><dt>Telemetry</dt><dd>10 Hz</dd></div>
       <div><dt>Drive</dt><dd>2 × 12 V tracks</dd></div>
     </dl>
@@ -466,6 +466,9 @@ footer{margin-top:80px;border-top:1px solid var(--rule);padding:22px 0 60px;
           is broadcast ten times a second. The lidar scan, which is far heavier, goes out five
           times a second on the same socket. The app sends back clicks, turret nudges, drive
           commands and resets.</p>
+        <p>How much of the robot's surroundings that scan will actually cover is still an open
+          question. The unit isn't fitted yet, so what the radar draws today is a synthesised
+          sweep standing in for a real one — the scan area gets settled when the hardware does.</p>
         <p>The operator app shows both camera feeds, a polar radar for the lidar, the status
           block and a drive pad. You can drive with WASD or an Xbox controller.</p>
         <p>Every actuator has a simulated stand-in, so the whole stack runs on a laptop with no
@@ -540,7 +543,7 @@ footer{margin-top:80px;border-top:1px solid var(--rule);padding:22px 0 60px;
 
             <rect x="452" y="234" width="162" height="60" rx="2" fill="var(--surface)" stroke="var(--rule-2)" stroke-width="1.2"/>
             <text x="533" y="256" text-anchor="middle" font-size="12" font-weight="600" fill="var(--ink)">RPLIDAR</text>
-            <text x="533" y="272" text-anchor="middle" font-size="10" fill="var(--muted)">360° scan</text>
+            <text x="533" y="272" text-anchor="middle" font-size="10" fill="var(--muted)">coverage TBD</text>
             <text x="533" y="286" text-anchor="middle" font-size="10" fill="var(--warn)">simulated today</text>
 
             <rect x="630" y="234" width="156" height="60" rx="2" fill="var(--surface)" stroke="var(--rule-2)" stroke-width="1.2"/>
