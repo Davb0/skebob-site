@@ -1,0 +1,33 @@
+# Skebob — project site
+
+A single-page site for **Skebob**, a tracked ground-to-air tracking robot: a two-axis
+camera turret that holds a moving aerial target in frame while the chassis turns to keep
+the turret inside its range.
+
+Robot source code lives in [Davb0/Skebob-Robotec](https://github.com/Davb0/Skebob-Robotec).
+
+## What's on the page
+
+- **Turret loop** — a live simulation of the pan/tilt PID loop, running the real constants
+  from `backend/config.py` (Kp 0.045 / Ki 0.0005 / Kd 0.012, 12 px deadzone, EMA α 0.35,
+  3.5°/frame step clamp, chassis assist at 30° with hysteresis). Move the pointer over the
+  frame to fly the target.
+- **CAD viewer** — the chassis tub, the Jetson mounting platform and the Jetson developer
+  kit, in interactive 3D. Geometry is exported from the project CAD, quantized to 16-bit
+  coordinates and embedded in the page, so nothing is fetched at runtime.
+- Tracking pipeline, turret control, system architecture, bill of materials and build log.
+
+## Running it
+
+It is one self-contained file. Open `index.html`, or serve the folder:
+
+```bash
+python3 -m http.server 8080
+```
+
+The only external requests are Google Fonts and three.js from cdnjs.
+
+## Deploying to GitHub Pages
+
+Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)`.
+`.nojekyll` is present so Jekyll leaves the file alone.
