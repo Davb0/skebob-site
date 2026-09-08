@@ -1,6 +1,6 @@
-# Skebob — project site
+# Project Talos — project site
 
-A single-page site for **Skebob**, a tracked ground-to-air tracking robot: a two-axis
+A single-page site for **Project Talos**, a tracked ground-to-air tracking robot: a two-axis
 camera turret that holds a moving aerial target in frame while the chassis turns to keep
 the turret inside its range.
 
