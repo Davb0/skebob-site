@@ -4,7 +4,6 @@ A single-page site for **Project Talos**, a tracked ground-to-air tracking robot
 camera turret that holds a moving aerial target in frame while the chassis turns to keep
 the turret inside its range.
 
-Robot source code lives in [Davb0/Skebob-Robotec](https://github.com/Davb0/Skebob-Robotec).
 
 ## What's on the page
 
